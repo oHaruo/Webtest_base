@@ -5,47 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEPCO</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-
     <script src="./slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="./slick/slick.css" />
     <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style2.css" />
 
     <script>
         $( document ).ready( function() {
-            $('.sldr').slick();
-          } );
-        </script>
+            $('.content1').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                rows: 1,
+                autoplay: true,
+                autoplaySpeed: 1500
+                
+            });
+        });
+    </script>
+
 </head>
 
 <body>
     <div class="header">
-        <div class="nav">
+        <div class="navbar">
             <a href="#"><img src="한국전력로고.png" alt="KEPCO Logo" class="logo"></a>
-            <a href="#">회사소개</a>
-            <a href="#">정보공개</a>
+            <div class="navbar-item">
+                <a href="#">회사소개</a>
+                <div class="dropdown">
+                    <a href="#">한전소개</a>
+                    <a href="#">사업분야</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">홈페이지 개선의견</a>
+                    <a href="#">지역본부사업소</a>
+                </div>
+            </div>
+            <div class="navbar-item">
+                <a href="#">정보공개</a>
+                <div class="dropdown">
+                    <a href="#">정보공개제도</a>
+                    <a href="#">사전정보공표</a>
+                    <a href="#">공공데이터개방</a>
+                    <a href="#">정보공개청구</a>
+                    <a href="#">사업실명제</a>
+                    <a href="#">업무처리절차</a>
+                    <a href="#">아이디어제안</a>
+                </div>
+            </div> 
             <a href="#">한전ON</a>
             <a href="#">민원센터</a>
-            <a href="#">기업센터</a>
-            <a href="#">IR센터</a>
-            <a href="#">홍보센터</a>
-            <a href="#">지식센터</a>
-            <a href="#">ESG 경영</a>
-            <a href="#">탄소중립</a>
-            <a href="#">열린경영</a>
+            <div class="navbar-item">
+                <a href="#">기업센터</a>
+                <div class="dropdown">
+                    <a href="#">에너지마켓플레이스</a>
+                    <a href="#">에너지벨리 플라자</a>
+                    <a href="#">중소기업 동반성장</a>
+                    <a href="#">사업공모</a>
+                    <a href="#">인터넷 문서접수</a>
+                    <a href="#">기술지원</a>
+                    <a href="#">KEPCO연구소기업</a>
+                    <a href="#">강소연구개발특구</a>
+                    <a href="#">파워체크모바일</a>
+                    <a href="#">오픈이노베이션(i-Oasis)</a>
+                </div>
+            </div> 
+            <div class="navbar-item">
+                <a href="#">IR센터</a>
+                <div class="dropdown">
+                    <a href="#">IR정보</a>
+                    <a href="#">재무정보</a>
+                    <a href="#">주식정보</a>
+                    <a href="#">투자자질의</a>
+                    <a href="#">IR 미팅정보</a>
+                    <a href="#">공고</a>
+                </div>
+            </div> 
+            <div class="navbar-item">
+                <a href="#">홍보센터</a>
+                <div class="dropdown">
+                    <a href="#">전시*관람</a>
+                    <a href="#">문화*스포츠</a>
+                    <a href="#">PR</a>
+                    <a href="#">공모전</a>
+                    <a href="#">BIXPO</a>
+                    <a href="#">한국에너지공과대학교</a>
+                    <a href="#">해상풍력정보공유</a>
+                    <a href="#">전기요금</a>
+                </div>
+            </div> 
+            <div class="navbar-item">
+                <a href="#">지식센터</a>
+                <div class="dropdown">
+                    <a href="#">절전정보광장</a>
+                    <a href="#">전기알림마당</a>
+                    <a href="#">전기자료</a>
+                    <a href="#">전력설비 전파자 정보</a>
+                    <a href="#">전력용어</a>
+                    <a href="#">연구개발(R&D) 정보검색</a>
+                </div>
+            </div> 
+            <div class="navbar-item">
+                <a href="#">ESG 경영</a>
+                <div class="dropdown">
+                    <a href="#">ESG 경영</a>
+                    <a href="#">환경경영</a>
+                    <a href="#">사회공헌</a>
+                    <a href="#">기업지배구조</a>
+                </div>
+            </div> 
+            <div class="navbar-item">
+                <a href="#">탄소중립</a>
+                <div class="dropdown">
+                    <a href="#">탄소중립 추진현황</a>
+                    <a href="#">전력산업 미래상</a>
+                    <a href="#">추진체계 및 협력방안</a>
+                    <a href="#">한전의 역할 및 과제</a>
+                    <a href="#">탄소중립 자료실</a>
+                </div>
+            </div> 
+            <div class="navbar-item">
+                <a href="#">열린경영</a>
+                <div class="dropdown">
+                    <a href="#">행정정보 공표</a>
+                    <a href="#">예산낭비신고센터</a>
+                    <a href="#">산업재해 은폐 신고센터</a>
+                    <a href="#">공유자원 이용신청</a>
+                    <a href="#">작업중지 요청센터</a>
+                    <a href="#">공사현장 국민안전 신고센터</a>
+                    <a href="#">안전관리 E-BOOK</a>
+                    <a href="#">송변전 건설정보공개</a>
+                </div>
+            </div> 
             <a href="#">경영공시</a>
+    
         </div>
     </div>
-    <div class="content">
-        <div class="sldr">
-            <div class="hero"></div>
-            <div class="hero"></div>
-            <div class="hero"></div>
-            <div class="hero"></div>
-            <div class="hero"></div>
-            <div class="hero"></div>
-            <div class="hero"></div>
-        </div>
-        
+    <div class="content1">
+        <div class="hero"> </div>
+        <div class="hero"> </div>
+        <div class="hero"> </div>
+    </div>
+    <div class="content2">
         <div id="section1" style="padding: 100px 20px; background-color: #f4f4f4;">
             <h2>섹션 1</h2>
             <p>내용 1</p>
@@ -64,4 +167,6 @@
         </div>
     </div>
 </body>
+
+
 </html>
